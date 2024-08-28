@@ -23,4 +23,5 @@ Secrets are generated in the `volumes/secrets` folder.
 
 ```console
 docker-compose down
+
 ```
