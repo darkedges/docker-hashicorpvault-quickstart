@@ -19,6 +19,13 @@ docker-compose up dqs-terraform
 
 Secrets are generated in the `volumes/secrets` folder.
 
+Validate
+
+```console
+openssl verify -CAfile volumes/secrets/dqs_idam_root.crt -untrusted volumes/secrets/dqs_idam_intermediate.crt volumes/secrets/test/tls.crt 
+volumes/secrets/test/tls.crt: OK
+```
+
 ## Clean up
 
 ```console
